@@ -56,7 +56,18 @@ batuKertasGunting('Kertas' , 'Batu')
 
 
 
-# nama = 'Fikri'
-# b ='Purwadhika'
-# s = 'Nama Saya {} , {}'.format(b,nama)
-# print(s)
+
+removeVocal('Fikri') => 'fkr'
+check('Fikri' ,'a') => False
+oddEven(9) => 9 adalah ganjil
+maxNumber(3,5,1,11) => 11
+stringFilter('asddsa123') => 123
+checkPlatNomor('D 5567 GA') => plat nomor
+# // 1. Function utk hapus huruf vocal v => Senin sebelum jam 8
+# // 2. Function check v
+# // 3. Function ganjil genap v
+# // 4. Function display angka terbesar v
+# // 5. Function ngefilter string (hanya bisa integer) v
+# // 6. Check Plat Nomor v
+
+
