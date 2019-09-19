@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+.merah{
+    color: red
+}
+
+.btn-rounded-green{
+    padding: 15px 50px 15px 50px;
+    border: none;
+    background-color: #53b59f;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-rounded-green:hover{
+    background-color: white;
+    color: #53b59f;
+    border: 2px solid #429281;
+    transition: 400ms;
+    /* height: 500px; */
+}

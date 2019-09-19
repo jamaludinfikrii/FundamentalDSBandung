@@ -1,0 +1,12 @@
+:root{
+    --primary-color : red;
+    --secondary-color : blue
+}
+
+p{
+    color: var(--primary-color);
+}
+
+table,tr,th,td{
+    border: 1px solid var(--primary-color);
+}
