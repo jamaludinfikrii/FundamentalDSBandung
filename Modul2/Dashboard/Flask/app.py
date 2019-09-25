@@ -1,5 +1,5 @@
 from flask import Flask,render_template
-from plots import count_type1
+from plots import count_type1,dist_total
 from cleaning_data import data_pokemon
 app = Flask(__name__)
 
@@ -19,8 +19,9 @@ def data():
 
 @app.route('/plots')
 def plots():
-    data = count_type1()
-    return render_template('plots.html' , data=data)
+    plot1 = count_type1()
+    plot2 = dist_total()
+    return render_template('plots.html' , data=[plot1,plot2])
 
 
 

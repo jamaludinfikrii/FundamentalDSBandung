@@ -13,15 +13,16 @@
             <div class="chart" id="dua">
 
             </div>
-        </div>
+        </div>  
 
     </div>
     
 
     <script>
-        var count_type1 = {{data | safe}}
-        Plotly.plot('count-type1' , count_type1 , {})
-        Plotly.plot('dua' , count_type1 , {})
+        // var count_type1 =
+        // var plot2 = {{data[1] | safe}}
+        Plotly.plot('count-type1' , {{data[0] | safe}} , {})
+        Plotly.plot('dua' , {{data[1] | safe}} , {})
     </script>
 
 {% endblock body %}
