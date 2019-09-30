@@ -1,0 +1,9 @@
+Kerjakan Notebooknya dulu, baru dashboard
+Notebooknya jangan lupa disalin dahulu agar notebook aslinya tidak hilang,
+Setelah Notebook selesai baru Kerjakan Dashboardnya
+
+Untuk Notebook, kirimkan ke Email saya, nama filenya = jawaban_namakalian.ipynb
+Untuk Dashboard, upload di github, kemudian link nya dikirim via Email
+
+Wish You Luck,
+Thank You
