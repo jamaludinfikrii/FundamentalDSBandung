@@ -1,10 +1,22 @@
-from flask import Flask,render_template
-
+from flask import Flask,render_template,request
+from datas import locations,property_type
+from prediction import prediction
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def index():
-    return render_template('prediction.html')
+    if request.method == 'POST':
+        data = request.form
+        data = data.to_dict()
+        data['Bathrooms'] = int(data['Bathrooms'])
+        data['Rooms'] = int(data['Rooms'])
+        data['Size Num'] = int(data['Size Num'])
+        hasil = prediction(data)
+        return render_template('result.html' , hasil_pred=hasil)
+        # Kita jalanini Function Predict
+        # Render Result.html
+    return render_template('prediction.html',
+    data_location = sorted(locations), prop = property_type)
 
 @app.route('/login')
 def login():
